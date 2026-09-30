@@ -61,7 +61,7 @@
     }
 
     nav {
-      height: 74px;
+      height: 88px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -71,7 +71,7 @@
     .brand {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       text-decoration: none;
       font-family: "Space Grotesk", sans-serif;
       font-size: 19px;
@@ -80,8 +80,9 @@
     }
 
     .brand img {
-      width: 34px;
-      height: 34px;
+      width: 54px;
+      height: 54px;
+      flex: 0 0 auto;
     }
 
     .nav-links {
@@ -516,7 +517,12 @@
 
     @media (max-width: 560px) {
       .shell { width: min(calc(100% - 28px), var(--max)); }
-      nav { height: 66px; }
+      nav { height: 76px; }
+
+      .brand img {
+        width: 46px;
+        height: 46px;
+      }
       h1 { font-size: clamp(49px, 15vw, 68px); }
       .hero { min-height: auto; padding: 52px 0 68px; }
       .hero-mark { min-height: 340px; }
